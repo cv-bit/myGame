@@ -1,0 +1,49 @@
+* {
+  box-sizing:border-box;
+}
+
+body {
+  background: #333;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.game-container {
+  position: relative; 
+  width: 352px;
+  height: 198px;
+  margin: 0 auto;
+  outline: 1px solid #fff;
+
+  transform: scale(1.5) translateY(50%);
+}
+
+.hero {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.hitbox {
+  height: 80%;
+  width: 80%;
+  border: 1px solid red;
+  position: relative;
+}
+
+.sword {
+  width: 15px;
+  height: 12px;
+  border: 2px solid skyblue;
+  border-left: none;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10%;
+}
